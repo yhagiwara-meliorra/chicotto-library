@@ -46,6 +46,7 @@
   .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:76px 28px 84px}
   .hero h1{font-family:var(--serif);font-size:clamp(32px,4.2vw,46px);line-height:1.42;letter-spacing:.02em;margin-bottom:18px;font-weight:700}
   .hero h1 span{background:var(--flow);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero h1 .nw{white-space:nowrap}
   .hero p{color:#c3d2e6;font-size:15px;max-width:480px;margin-bottom:28px}
   .hero .cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
   .hero .btn-primary{background:#fff;color:var(--navy);padding:15px 28px;font-size:15px;box-shadow:0 12px 28px rgba(0,0,0,.35)}
@@ -74,7 +75,7 @@
   .issue-card:hover .thumb img{transform:scale(1.03)}
   .issue-card .ph{position:relative;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:18px;color:#fff;overflow:hidden}
   .issue-card .ph::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--flow);opacity:.9}
-  .issue-card .ph .ph-season{font-size:10.5px;letter-spacing:.28em;color:rgba(255,255,255,.62);font-weight:700}
+  .issue-card .ph .ph-season{font-size:10px;letter-spacing:.2em;color:rgba(255,255,255,.62);font-weight:700;padding-right:88px}
   .issue-card .ph .ph-year{position:absolute;right:-4px;top:26%;font-family:var(--serif);font-size:92px;font-weight:800;line-height:1;color:rgba(255,255,255,.08);letter-spacing:-.02em;pointer-events:none}
   .issue-card .ph .t{font-family:var(--serif);font-size:19px;font-weight:800;letter-spacing:.06em}
   .issue-card .ph .s{font-size:12px;opacity:.85}
@@ -150,7 +151,7 @@
 <div class="hero">
   <div class="wrap">
     <div>
-      <h1>CHICOTTOを、<br><span>いつでも・どこでも・すぐに。</span></h1>
+      <h1>CHICOTTOを、<br><span><span class="nw">いつでも・</span><span class="nw">どこでも・</span><span class="nw">すぐに。</span></span></h1>
       <p>紙で大切にお届けしてきたマーケティングブック「CHICOTTO」を、WEBでも快適に。重いPDFを待つことなく、スマホでもPCでもご覧いただけます。</p>
       <div class="cta">
         <button class="btn-primary btn" onclick="openViewer('2026・秋冬号')">最新号を読む</button>
