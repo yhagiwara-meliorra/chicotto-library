@@ -47,7 +47,12 @@
   .hero h1{font-family:var(--serif);font-size:clamp(32px,4.2vw,46px);line-height:1.42;letter-spacing:.02em;margin-bottom:18px;font-weight:700}
   .hero h1 span{background:var(--flow);-webkit-background-clip:text;background-clip:text;color:transparent}
   .hero h1 .nw{white-space:nowrap}
-  .hero p{color:#c3d2e6;font-size:15px;max-width:480px;margin-bottom:28px}
+  .hero .inthis{font-size:11px;letter-spacing:.18em;color:#8fa6c4;font-weight:700;margin-bottom:10px}
+  .hero .issuedesc{color:#c3d2e6;font-size:14.5px;max-width:500px;margin-bottom:14px}
+  .hero .issuedesc b{color:#fff}
+  .hero .toc{list-style:none;margin:0 0 28px;padding:0;max-width:500px}
+  .hero .toc li{position:relative;padding-left:20px;color:#c3d2e6;font-size:13px;line-height:2}
+  .hero .toc li::before{content:"";position:absolute;left:0;top:.95em;width:11px;height:2px;border-radius:2px;background:var(--flow)}
   .hero .cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
   .hero .btn-primary{background:#fff;color:var(--navy);padding:15px 28px;font-size:15px;box-shadow:0 12px 28px rgba(0,0,0,.35)}
   .hero .btn-line{background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff;padding:14px 24px;border-radius:999px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit;transition:background .18s,border-color .18s}
@@ -134,7 +139,6 @@
 <header class="site">
   <div class="wrap nav">
     <div class="brand">
-      <div class="logo">C</div>
       <div class="name">CHICOTTO<small>DIGITAL LIBRARY</small></div>
     </div>
     <nav class="menu">
@@ -152,7 +156,15 @@
   <div class="wrap">
     <div>
       <h1>CHICOTTOを、<br><span><span class="nw">いつでも・</span><span class="nw">どこでも・</span><span class="nw">すぐに。</span></span></h1>
-      <p>紙で大切にお届けしてきたマーケティングブック「CHICOTTO」を、WEBでも快適に。重いPDFを待つことなく、スマホでもPCでもご覧いただけます。</p>
+      <div class="inthis">IN THIS ISSUE ｜ 最新号 2026・秋冬号</div>
+      <p class="issuedesc">特集<b>「変わりゆく“欲しい”のかたち」</b>。最新トレンドやライフスタイルから、2026年秋冬のお菓子業界を取り巻くマーケットを読み解く一冊です。</p>
+      <ul class="toc">
+        <li>酒税改正で変わる、お酒とおつまみの新潮流</li>
+        <li>Special Interview　小売業の現在地とこれから ─ オーケー株式会社</li>
+        <li>メリハリ需要から見る、これからの消費</li>
+        <li>選ばれる、「新しい催事」のつくりかた</li>
+        <li>売場を彩る地場菓子特集　ほか</li>
+      </ul>
       <div class="cta">
         <button class="btn-primary btn" onclick="openViewer('2026・秋冬号')">最新号を読む</button>
         <button class="btn-line" onclick="document.getElementById('library').scrollIntoView({behavior:'smooth'})">バックナンバー一覧</button>
@@ -209,7 +221,7 @@
 
 <footer class="site">
   <div class="wrap frow">
-    <div class="brand"><div class="logo">C</div><div class="name">CHICOTTO<small>DIGITAL LIBRARY</small></div></div>
+    <div class="brand"><div class="name">CHICOTTO<small>DIGITAL LIBRARY</small></div></div>
     <div style="display:flex;gap:24px">
       <a href="#library">バックナンバー</a>
       <a href="https://www.confex.co.jp/" target="_blank">コーポレートサイト ↗</a>
